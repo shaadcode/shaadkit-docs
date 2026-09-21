@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "jsx": "react-jsx",
+    "lib": ["DOM", "ES2023"],
+    "moduleDetection": "force",
+    "useDefineForClassFields": true,
+
+    /* modules */
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "resolveJsonModule": true,
+    "allowArbitraryExtensions": true,
+    "allowImportingTsExtensions": true,
+    "allowJs": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "allowUnreachableCode": false,
+    "alwaysStrict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "useUnknownInCatchVariables": true,
+    "noEmit": true,
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true
+  },
+
+  "include": ["docs/*", "theme", "rspress.config.ts", "src/*"],
+  "mdx": {
+    "checkMdx": true
+  }
+}

@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@font-face {
+  font-family: "Geist";
+  font-display: swap;
+  src:
+    local("Geist"),
+    url("./font/Geist-VariableFont.ttf") format("truetype");
+}
