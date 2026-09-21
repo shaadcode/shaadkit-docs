@@ -7,6 +7,7 @@ export default defineConfig({
   description: 'Next.js foundation for modern web applications',
   lang: 'en',
   icon: '/logos/Skit-logo.png',
+  base: '/shaadkit-docs/',
   locales: [
     {
       lang: 'en',
