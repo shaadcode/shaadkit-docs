@@ -90,7 +90,7 @@ export const LogoStepper: React.FC<LogoStepperProps> = ({
                   duration: animationDuration,
                   ease: [0.4, 0, 0.2, 1],
                 }}
-                className="flex flex-col items-center shrink-0 min-h-50 w-20"
+                className="flex flex-col items-center shrink-0 min-h-40 w-20"
               >
                 <motion.div className="rounded-xl border border-border bg-card p-4 hover:border-primary transition-colors">
                   <div className="w-12 h-12 flex items-center justify-center">
@@ -106,7 +106,7 @@ export const LogoStepper: React.FC<LogoStepperProps> = ({
                     duration: animationDuration,
                     ease: [0.4, 0, 0.2, 1],
                   }}
-                  className="flex flex-col items-center mt-4 h-28"
+                  className="flex flex-col items-center mt-4 h-15"
                 >
                   <div className="w-0.5 h-5 mb-4 bg-border" />
                   <span className="text-muted-foreground uppercase text-xs font-medium tracking-wider whitespace-nowrap">

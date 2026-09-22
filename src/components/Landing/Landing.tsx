@@ -1,14 +1,19 @@
-import { Box, Button, Center, Container, Grid, GridCol, Group, Stack, Text } from '@mantine/core'
-import { LogoStepper } from '../ui/logo-stepper'
+import { Button, Center, Container, Grid, GridCol, Group, Stack, Text } from '@mantine/core'
 import AnimatedTexts from './AnimatedTexts'
+import classes from './Landing.module.css'
 import TechnologiesLogos from './TechnologiesLogos'
 
 function Landing() {
   return (
     <Container size="xl">
-      <Grid>
-        <GridCol span={{ base: 12, lg: 6 }}>
-          <Stack gap={0} justify="center" h="100dvh">
+      <Grid
+        styles={{
+          inner: { height: '100%' },
+        }}
+        h="100dvh"
+      >
+        <GridCol order={{ base: 2, lg: 1 }} span={{ base: 12, lg: 6 }}>
+          <Stack className={classes['detailsContainer']}>
             <AnimatedTexts data={[
               { word: 'Modern', props: { c: 'green' } },
               { word: 'Scalable', props: { c: 'orange' } },
@@ -18,8 +23,8 @@ function Landing() {
             />
             <Text>
               <Text span fz={45} fw={700} tt="uppercase">shaadkit,</Text>
-              {'  '}
-              <Text span fz={35} tt="uppercase">my production-oriented stack for Nextjs projects</Text>
+              <br />
+              <Text span fz={{ base: 25, lg: 35 }} tt="uppercase">my production-oriented stack for Nextjs projects</Text>
             </Text>
             <Group mt="xl">
               <Button component="a" target="_blank" href="https://github.com/shaadcode/shaadkit" color="dark" radius={999} tt="capitalize" variant="outline">
@@ -28,7 +33,7 @@ function Landing() {
             </Group>
           </Stack>
         </GridCol>
-        <GridCol visibleFrom="lg" span={{ base: 0, lg: 6 }}>
+        <GridCol order={{ base: 1, lg: 2 }} span={{ base: 12, lg: 6 }}>
           <Center h="100%">
             <TechnologiesLogos />
           </Center>
