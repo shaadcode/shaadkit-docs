@@ -1,0 +1,11 @@
+.wayToContribute{
+    padding: var(--mantine-spacing-lg);
+    border-radius: var(--mantine-radius-md);
+    transition: all 0.2s;
+
+    @mixin hover {
+        border-color: var(--card-border-color);
+        box-shadow: var(--mantine-shadow-md);
+        transform: rotate(1deg) scale(1.01);
+    }
+}
