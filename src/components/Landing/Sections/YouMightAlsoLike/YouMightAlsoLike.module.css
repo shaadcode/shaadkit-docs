@@ -1,0 +1,6 @@
+.cardRoot{
+    @mixin hover {
+        box-shadow: var(--mantine-shadow-md);
+        transform: rotate(1deg) scale(1.01);
+    }
+}
