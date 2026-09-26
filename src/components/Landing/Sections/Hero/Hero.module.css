@@ -1,0 +1,8 @@
+.detailsContainer{
+    justify-content: flex-start;
+    height: 100%;
+    gap: 0px;
+    @mixin larger-than $mantine-breakpoint-lg{
+        justify-content: center;
+    }
+}
