@@ -1,0 +1,10 @@
+.featureCard{
+    padding: var(--mantine-spacing-lg);
+    border-radius: var(--mantine-radius-md);
+    transition: all 0.2s;
+    @mixin hover {
+        box-shadow: var(--mantine-shadow-xs);
+        transform: rotate(-0.5deg) scale(1.01);
+    border-color: var(--feature-color-border);
+    }
+}
