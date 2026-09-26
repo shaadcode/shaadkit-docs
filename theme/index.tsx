@@ -1,8 +1,8 @@
-import { MantineProvider } from '@mantine/core'
-import { Layout as BasicLayout } from '@rspress/core/theme-original'
+import { MantineProvider } from '@mantine/core';
+import { Layout as BasicLayout } from '@rspress/core/theme-original';
 // Learn how to customize the theme: https://rspress.rs/guide/basic/custom-theme
-import '@mantine/core/styles.css'
-import './index.css'
+import '@mantine/core/styles.css';
+import './index.css';
 
 function Layout() {
   return (
@@ -11,7 +11,6 @@ function Layout() {
         fontFamily: 'Geist',
         headings: { fontFamily: 'Geist' },
       }}
-      forceColorScheme="light"
     >
       <BasicLayout />
     </MantineProvider>
