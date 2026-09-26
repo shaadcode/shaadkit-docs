@@ -1,5 +1,5 @@
-import { AnimatePresence, motion } from 'motion/react'
-import React, { useEffect, useState } from 'react'
+import { AnimatePresence, motion } from 'motion/react';
+import React, { useEffect, useState } from 'react';
 
 type AnimationDirection = 'loop' | 'vloop'
 
@@ -92,9 +92,9 @@ export const LogoStepper: React.FC<LogoStepperProps> = ({
                 }}
                 className="flex flex-col items-center shrink-0 min-h-40 w-20"
               >
-                <motion.div className="rounded-xl border border-border bg-card p-4 hover:border-primary transition-colors">
-                  <div className="w-12 h-12 flex items-center justify-center">
-                    {logo.icon}
+                <motion.div className="rounded-xl bg-card border border-border p-4 hover:border-primary transition-colors ">
+                  <div className="w-12 h-12 flex  items-center justify-center">
+                    {logo?.icon}
                   </div>
                 </motion.div>
 
@@ -110,7 +110,7 @@ export const LogoStepper: React.FC<LogoStepperProps> = ({
                 >
                   <div className="w-0.5 h-5 mb-4 bg-border" />
                   <span className="text-muted-foreground uppercase text-xs font-medium tracking-wider whitespace-nowrap">
-                    {logo.label}
+                    {logo?.label}
                   </span>
                 </motion.div>
               </motion.div>
