@@ -5,7 +5,7 @@ import { IconCheck, IconCopy, IconInfoCircle, IconPlayerPlay, IconRocket, IconSe
 function CodeBlock({ code, label }: { code: string, label?: string }) {
   return (
     <Card withBorder radius="md" p="md" bg="dark.8">
-      <Group justify="space-between" mb="xs">
+      <Group justify="space-between">
         <Text size="xs" c="dimmed" ff="monospace">
           {label || 'Terminal'}
         </Text>
@@ -13,8 +13,7 @@ function CodeBlock({ code, label }: { code: string, label?: string }) {
           {({ copied, copy }) => (
             <Tooltip label={copied ? 'Copied!' : 'Copy'} withArrow position="left">
               <ActionIcon
-                color={copied ? 'teal' : 'gray'}
-                variant="subtle"
+                variant="default"
                 onClick={copy}
                 size="sm"
               >
