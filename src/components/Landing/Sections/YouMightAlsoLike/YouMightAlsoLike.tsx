@@ -73,7 +73,7 @@ function YouMightAlsoLike() {
           fw={800}
           lh={1.2}
         >
-          More tools from the same maker
+          Tools that might come in handy
         </Title>
         <Text c="dimmed" ta="center" size="md" maw={600}>
           If you find ShaadKit useful, you might also enjoy these projects
