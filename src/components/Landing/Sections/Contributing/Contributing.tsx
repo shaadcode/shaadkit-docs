@@ -1,5 +1,5 @@
 import { Anchor, Badge, Button, Card, Divider, Group, List, SimpleGrid, Stack, Text, ThemeIcon, Title } from '@mantine/core';
-import { IconBook, IconBrandGithub, IconBug, IconBulb, IconExternalLink, IconGitPullRequest, IconHeart, IconMessageCircle, IconStar, IconUsers } from '@tabler/icons-react';
+import { IconBook, IconBrandGithub, IconBug, IconBulb, IconDownload, IconExternalLink, IconFlask, IconGitFork, IconGitPullRequest, IconHeart, IconMessageCircle, IconPencil, IconStar, IconUsers } from '@tabler/icons-react';
 import classes from './Contributing.module.css';
 
 const waysToContribute = [
@@ -132,40 +132,63 @@ function Contributing() {
           The process is straightforward. Here is how to get started:
         </Text>
         <Card withBorder radius="md" p="lg">
-          <List
-            spacing="sm"
-            size="sm"
-            center
-            icon={(
-              <ThemeIcon color="teal" size={22} radius="xl">
-                <IconGitPullRequest size={12} />
-              </ThemeIcon>
-            )}
-          >
-            <List.Item>
+          <List spacing="sm" size="sm" center>
+            <List.Item
+              icon={(
+                <ThemeIcon color="blue" size={22} radius="xl">
+                  <IconMessageCircle size={12} />
+                </ThemeIcon>
+              )}
+            >
               <Text fw={600} span>Discuss</Text>
               {' '}
               first — open an issue or start a discussion to share your idea
               and get feedback before writing code
             </List.Item>
-            <List.Item>
+
+            <List.Item
+              icon={(
+                <ThemeIcon color="grape" size={22} radius="xl">
+                  <IconGitFork size={12} />
+                </ThemeIcon>
+              )}
+            >
               <Text fw={600} span>Fork</Text>
               {' '}
               the repository on GitHub
             </List.Item>
-            <List.Item>
+
+            <List.Item
+              icon={(
+                <ThemeIcon color="orange" size={22} radius="xl">
+                  <IconDownload size={12} />
+                </ThemeIcon>
+              )}
+            >
               <Text fw={600} span>Clone</Text>
               {' '}
-              your fork locally and create a
-              new branch
+              your fork locally and create a new branch
             </List.Item>
-            <List.Item>
+
+            <List.Item
+              icon={(
+                <ThemeIcon color="teal" size={22} radius="xl">
+                  <IconPencil size={12} />
+                </ThemeIcon>
+              )}
+            >
               <Text fw={600} span>Make</Text>
               {' '}
-              your changes following the
-              project&apos;s code style
+              your changes following the project&apos;s code style
             </List.Item>
-            <List.Item>
+
+            <List.Item
+              icon={(
+                <ThemeIcon color="yellow" size={22} radius="xl">
+                  <IconFlask size={12} />
+                </ThemeIcon>
+              )}
+            >
               <Text fw={600} span>Test</Text>
               {' '}
               your changes with
@@ -174,11 +197,17 @@ function Contributing() {
                 bun run test
               </Text>
             </List.Item>
-            <List.Item>
+
+            <List.Item
+              icon={(
+                <ThemeIcon color="green" size={22} radius="xl">
+                  <IconGitPullRequest size={12} />
+                </ThemeIcon>
+              )}
+            >
               <Text fw={600} span>Submit</Text>
               {' '}
-              a Pull Request with a clear
-              description and reference the original issue
+              a Pull Request with a clear description and reference the original issue
             </List.Item>
           </List>
         </Card>
